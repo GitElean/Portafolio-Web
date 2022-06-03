@@ -6,9 +6,6 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-      colors:{
-         
-      },
       screens: {
         'tablet': '640px',
         // => @media (min-width: 640px) { ... }
@@ -23,7 +20,9 @@ module.exports = {
       fontFamily: {
       },
       colors: {
-        
+        'sakura':{
+          50:'#ffb7c5'
+        }
       },
     },
   },
