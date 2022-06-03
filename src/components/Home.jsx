@@ -1,10 +1,8 @@
-import React from 'react';
-import Footer from './footer';
-import Reactlogo from './svg/reactLogo';
-import Tailwindlogo from './svg/tailwindLogo';
+import React from 'react'
+import Footer from './footer'
 
 const Home = () => {
-    return (
+  return (
         <div className="w-screen h-screen place-items-center bg-white">
             <div className="top-1/3 relative">
                 <div className="text-center">
@@ -13,9 +11,9 @@ const Home = () => {
                     <div className="text-xl">Junior Developer</div>
                 </div>
             </div>
-            <Footer/>   
+            <Footer/>
         </div>
-    );
+  )
 }
 
-export default Home;
+export default Home

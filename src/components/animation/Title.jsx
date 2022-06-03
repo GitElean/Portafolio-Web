@@ -5,42 +5,42 @@ const KANJI_DELAY = 2.3
 
 // Duración del trazo
 const transition = {
-    duration: 1,
-    ease: 'easeInOut',
-    delay: KANJI_DELAY
+  duration: 1,
+  ease: 'easeInOut',
+  delay: KANJI_DELAY
 }
 
 const animateStroke = {
-    hidden: {
-        pathLength: 0,
-        opacity: 0,
-    },
-    draw: {
-        pathLength: 1,
-        opacity: 1,
-        transition: {
-            pathLength: transition,
-            opacity: {
-                duration: 0.1,
-                ease: 'linear',
-                delay: KANJI_DELAY
-            }
-        }
+  hidden: {
+    pathLength: 0,
+    opacity: 0
+  },
+  draw: {
+    pathLength: 1,
+    opacity: 1,
+    transition: {
+      pathLength: transition,
+      opacity: {
+        duration: 0.1,
+        ease: 'linear',
+        delay: KANJI_DELAY
+      }
     }
+  }
 }
 
 // Delay entre cada trazo
 const container = {
-    draw: {
-        transition: {
-            staggerChildren: 0.13,
-            delayChildren: 0.13
-        }
+  draw: {
+    transition: {
+      staggerChildren: 0.13,
+      delayChildren: 0.13
     }
+  }
 }
 
 const Title = () => {
-    return (
+  return (
         <motion.div
             initial="hidden"
             animate="draw"
@@ -164,8 +164,7 @@ const Title = () => {
             </svg>
 
         </motion.div>
-    )
+  )
 }
 
 export default Title
-

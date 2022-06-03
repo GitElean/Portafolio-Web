@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Flower = () => {
-    return (
+  return (
         <svg
             viewBox="0 0 93.000001 88.62948"
             xmlns="http://www.w3.org/2000/svg"
@@ -18,7 +18,7 @@ const Flower = () => {
                 transform="translate(299.21428,796.6189)"
             />
         </svg>
-    )
+  )
 }
 
 export default Flower

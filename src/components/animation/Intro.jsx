@@ -4,7 +4,7 @@ import Kanji from './Kanji'
 import Title from './Title'
 
 const Intro = () => {
-    return (
+  return (
         <motion.div
             className="fixed z-50 w-screen h-screen overflow-hidden bg-[#ffb7c5] flex items-center justify-center flex-col"
             animate={{ y: '-94%' }}
@@ -23,7 +23,6 @@ const Intro = () => {
                     </div>
                 </motion.div>
 
-
             </motion.div>
             <motion.div className="w-3/4 desktop:w-1/2 overflow-hidden flex items-center justify-center">
                 <motion.div
@@ -39,7 +38,7 @@ const Intro = () => {
             </motion.div>
 
         </motion.div>
-    )
+  )
 }
 
 export default Intro

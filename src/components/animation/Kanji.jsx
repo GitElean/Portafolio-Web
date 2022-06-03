@@ -3,40 +3,40 @@ import { motion } from 'framer-motion'
 
 // Duración del trazo
 const transition = {
-    duration: 0.5,
-    ease: 'easeInOut'
+  duration: 0.5,
+  ease: 'easeInOut'
 }
 
 const animateStroke = {
-    hidden: {
-        pathLength: 0,
-        opacity: 0
-    },
-    draw: {
-        pathLength: 1,
-        opacity: 1,
-        transition: {
-            pathLength: transition,
-            opacity: {
-                duration: 0.1,
-                ease: 'linear'
-            }
-        }
+  hidden: {
+    pathLength: 0,
+    opacity: 0
+  },
+  draw: {
+    pathLength: 1,
+    opacity: 1,
+    transition: {
+      pathLength: transition,
+      opacity: {
+        duration: 0.1,
+        ease: 'linear'
+      }
     }
+  }
 }
 
 // Delay entre cada trazo
 const container = {
-    draw: {
-        transition: {
-            staggerChildren: 0.20,
-            delayChildren: 0.20
-        }
+  draw: {
+    transition: {
+      staggerChildren: 0.20,
+      delayChildren: 0.20
     }
+  }
 }
 
 const Kanji = () => {
-    return (
+  return (
         <div
 
             className="flex"
@@ -150,8 +150,7 @@ const Kanji = () => {
             </motion.svg>
 
         </div>
-    )
+  )
 }
 
 export default Kanji
-
